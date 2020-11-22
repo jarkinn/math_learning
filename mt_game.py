@@ -7,6 +7,7 @@ import random
 import sys
 from inputimeout import inputimeout, TimeoutOccurred
 
+
 # Function which fetches answer and checks if timeout occurs
 def get_input_with_timeout(prompt, points):
     no_timeout = False
@@ -40,7 +41,6 @@ while points < 10:
     # The calculation string shown to the user
     calculation = "{} * {} = ".format(multiplier, mt)
     number, points = get_input_with_timeout(calculation, points)
-    #    number = input(calculation)
     correct_answer = mt * multiplier
 
     # While loop is continued until the correct answer is given or the user wants to quit
